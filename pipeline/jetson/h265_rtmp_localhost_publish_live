@@ -1,4 +1,4 @@
-rtmpsrc location=rtmp://0.0.0.0/publish/live ! 
+rtmpsrc location=rtmp://10.240.0.1/publish/live ! 
 flvdemux name=demux 
 
 demux.video ! identity name=v_delay signal-handoffs=TRUE ! h264parse ! nvv4l2decoder ! nvvidconv ! 
